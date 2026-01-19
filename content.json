@@ -1,0 +1,53 @@
+{
+    "name": "Arielle King",
+    "hero": {
+      "subtitle": "Ph.D. Candidate, Applied Science & Technology",
+      "institution": "North Carolina Agricultural and Technical State University",
+      "titleMain": "Data Science",
+      "titleAccent": "& STEM Education.",
+      "description": "Doctoral Research Fellow specializing in critical quantitative methods, machine learning, and data justice. Integrating ecological development with human-centered data analysis."
+    },
+    "socials": [
+      { "name": "GitHub", "url": "https://github.com/kingarielle07" },
+      { "name": "LinkedIn", "url": "https://www.linkedin.com/in/arielle-king-mat-phd-candidate-a7a393bb/" },
+      { "name": "Email", "user": "kingarielle648", "domain": "gmail.com" },
+      { "name": "Google Scholar", "url": "https://scholar.google.com/citations?hl=en&user=U_DQodEAAAAJ" }
+    ],
+    "stats": [
+      { "value": "12+", "label": "Years Experience" },
+      { "value": "3+", "label": "Major Awards" },
+      { "value": "1", "label": "Publication" }
+    ],
+    "timeline": [
+      { "year": "2013-2021", "title": "Mathematics Educator", "desc": "High School Math Teacher at Guilford County Schools. Achieved >30% student growth." },
+      { "year": "2021", "title": "Began PhD & IBM Scholar", "desc": "Started Ph.D. at NC A&T. Selected as IBM-HBCU Quantum Center Graduate Scholar." },
+      { "year": "2024", "title": "Innovation Team Lead", "desc": "Led cross-disciplinary team to develop Grad Mgmt App. Winner of SciTech Innovation Challenge." },
+      { "year": "2025", "title": "Research Fellow & Author", "desc": "Published in 'Analytics'. Leading mixed-methods study on Black STEM undergraduates." },
+      { "year": "2026", "title": "PhD Candidate", "desc": "Anticipated graduation in Applied Science & Technology - STEM Education." }
+    ],
+    "projects": [
+      {
+        "title": "NSF Data Text Mining",
+        "tech": "R / XGBoost / NLP",
+        "desc": "Modeling project using national publication data to examine predictors of scientific impact. Applied text mining and time-series anomaly detection.",
+        "url": "#"
+      },
+      {
+        "title": "Grad Mgmt Mobile App",
+        "tech": "UX / Mobile Dev Mgmt",
+        "desc": "Led development of a mobile app to reduce attrition and streamline degree progress. 1st Place Winner, SciTech Innovation Challenge.",
+        "url": "#"
+      },
+      {
+        "title": "Black epiSTEMologies",
+        "tech": "Mixed-Methods / Quant",
+        "desc": "Managed collaborative research analyzing racialized experiences in STEM higher education using statistical and qualitative methods.",
+        "url": "#"
+      }
+    ],
+    "files": {
+      "cv": "assets/Aking_CV_king_Oct_2025.pdf",
+      "resume": "assets/resume.pdf",
+      "headshot": "assests/IMG-1010.jpg"
+    }
+  }

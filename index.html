@@ -2,52 +2,222 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arielle King</title>
+    <title>Academic Portfolio | Dr. [Name]</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Roboto+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-
 </head>
 <body>
-    <main class="container-fluid vh-100">
-        <div class="row justify-content-around vh-100 my-auto">
-            <section class="left-section col-12 col-lg-6 d-flex flex-column justify-content-center align-items-center">
-            <div class="main-img mb-5">
-                <img src="./imgs/path19681.png" class="img-fluid" alt="arielle-headshot-photo">
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" id="nav-name" class="btn-primary btn" style="padding: 8px 15px; text-decoration: none;"></a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#timeline-section">Timeline</a></li>
+                <li><a href="#projects">Work</a></li>
+                <li><a href="#downloads">Downloads</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h2 id="hero-subtitle" class="accent-text" style="font-size: 1.5rem; margin-bottom: 5px;"></h2>
+                <div id="hero-institution" style="font-family: 'Roboto Mono'; font-size: 0.9rem; color: var(--pale-sky-500); margin-bottom: 20px; letter-spacing: 1px;"></div>
+                <h1 id="hero-main-title-container" style="margin-bottom: 20px;">
+                    <span id="hero-title-main"></span><br>
+                    <span id="hero-title-accent" class="accent-text"></span>
+                </h1>
+                <p id="hero-description" style="color: var(--pale-sky-200);"></p>
+                <div id="social-links"></div>
             </div>
-            <h1 class="me-title mb-4 fw-bolder">I'm Arielle King</h1>
-            <h3 class="me-sub-title text-center">I'm an Educator, Public Speaker, and Mother of 4</h3>
-        </section>
-        <section class="about-me col-12 col-lg-6 d-flex flex-column justify-content-center align-items-center">
-            <div class="about-title mb-4">
-                <p class="title-text fs-2 fw-bold text-white">
-                    Queen of this Castle
-                </p>
+            <div class="hero-image-container">
+                <img id="hero-image-headshot" src="/assets/IMG-1010.jpg" alt="Arielle King" class="headshot">
             </div>
-            <div class="about-text mb-5">
-                <p class="text-center fs-2 lh-lg text-white">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut, assumenda, facilis minima rerum veritatis officiis deserunt, reiciendis iure quo hic sint voluptatum nam maxime dicta dolor veniam provident voluptatem molestiae.
-                </p>
-            </div>
-            <div class="social-media">
-                <h1 class="fs-3 mb-4 text-white text-center">Connect With Me on Social Media</h1>
-                <div class="media-icons d-flex justify-content-around mx-auto w-50">
-                    <a href="https://www.linkedin.com/in/arielle-king-a7a393bb/"" target="blank"><i class="fab fa-linkedin text-white fs-1 ml-2"></i></a>
-                    <a href="/" target="blank"><i class="fab fa-twitter text-white fs-1 ml-2"></i></a>
-                    <a href="#" data-name="ariellejones38"
-                    data-domain="gmail"
-                    data-tld="com" target="blank" onclick="window.location.href = 'mailto:' + this.dataset.name + '@' + this.dataset.domain + '.' + this.dataset.tld; return false;"><i class="fas fa-envelope text-white fs-1 ml-2 cryptedmail"
-                    ></i></a>
+        </div>
+    </header>
+
+    <section id="research">
+        <h2 class="accent-text">Research Impact</h2>
+        <div id="stats-grid" class="stats-grid"></div>
+    </section>
+
+    <section id="timeline-section">
+        <h2 class="accent-text" style="margin-bottom: 50px;">PhD Journey</h2>
+        <div id="timeline" class="timeline"></div>
+    </section>
+
+    <section id="projects">
+        <h2 class="accent-text" style="margin-bottom: 40px;">Computational Work</h2>
+        <div id="project-grid" class="project-grid"></div>
+    </section>
+
+    <section id="downloads">
+        <div class="download-box">
+            <h2>Academic Dossier</h2>
+            <div style="margin-top: 30px;">
+                <div class="dropdown">
+                    <button class="btn btn-primary dropbtn" onclick="toggleDrop('cv-drop')" aria-haspopup="true" aria-expanded="false" aria-label="Curriculum Vitae Menu">Curriculum Vitae ▼</button>
+                    <div id="cv-drop" class="dropdown-content" role="menu">
+                        <a id="cv-view" target="_blank" rel="noopener noreferrer" role="menuitem">View in Browser</a>
+                        <a id="cv-dl" download role="menuitem">Download PDF</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropbtn" onclick="toggleDrop('res-drop')" aria-haspopup="true" aria-expanded="false" aria-label="Industry Resume Menu">Industry Resume ▼</button>
+                    <div id="res-drop" class="dropdown-content" role="menu">
+                        <a id="res-view" target="_blank" role="menuitem">View in Browser</a>
+                        <a id="res-dl" download role="menuitem">Download PDF</a>
+                    </div>
                 </div>
             </div>
-        </section>
         </div>
-        
-    </main>
-    
-    <script src="script.js"></script>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 <span id="footer-name"></span>. Built for Academic Excellence.</p>
+    </footer>
+
+    <script>
+        // 1. DATA LOADER
+        async function loadData() {
+            try {
+                const response = await fetch('./content.json');
+                const data = await response.json();
+
+                document.getElementById('nav-name').innerText = data.name;
+                document.getElementById('footer-name').innerText = data.name;
+                // Hero
+                document.getElementById('hero-subtitle').innerText = data.hero.subtitle;
+                document.getElementById('hero-institution').innerText = data.hero.institution;
+                document.getElementById('hero-title-main').innerText = data.hero.titleMain;
+                document.getElementById('hero-title-accent').innerText = data.hero.titleAccent;
+                document.getElementById('hero-description').innerText = data.hero.description;
+                // document.getElementById('hero-image-headshot').src  = data.files.headshot
+
+                // Socials
+                const socialCont = document.getElementById('social-links');
+                socialCont.innerHTML = ''; // Clear existing content
+                
+                const icons = {
+                    "GitHub": `<svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>`,
+                    "LinkedIn": `<svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>`,
+                    "Twitter": `<svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path></svg>`,
+                    "Google Scholar": `<svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10L12 5 2 10 12 15l10-5z"></path><path d="M6 12.5V16a6 6 0 0 0 12 0v-3.5"></path></svg>`,
+                    "Email": `<svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>`
+                };
+
+                data.socials.forEach(s => {
+                    const link = document.createElement('a');
+                    link.className = 'social-icon';
+                    link.setAttribute('aria-label', s.name);
+                    link.innerHTML = icons[s.name] || s.name;
+
+                    // Universal Obfuscation Strategy
+                    // We avoid setting href to the actual URL to prevent simple scraping
+                    link.href = "javascript:void(0);";
+                    link.onclick = (e) => {
+                        e.preventDefault();
+                        if (s.user && s.domain) {
+                            // Reconstruct email on click
+                            window.location.href = 'mailto:' + s.user + '@' + s.domain;
+                        } else if (s.url) {
+                            // Open external links in new tab
+                            window.open(s.url, '_blank', 'noopener,noreferrer');
+                        }
+                    };
+                    
+                    socialCont.appendChild(link);
+                });
+
+                // Stats
+                const statsCont = document.getElementById('stats-grid');
+                data.stats.forEach(s => {
+                    statsCont.innerHTML += `<div class="stat-card"><h3>${s.value}</h3><p>${s.label}</p></div>`;
+                });
+
+                // Timeline
+                const timelineCont = document.getElementById('timeline');
+                data.timeline.forEach(t => {
+                    timelineCont.innerHTML += `
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="tech-tag">${t.year}</div>
+                            <h3>${t.title}</h3>
+                            <p>${t.desc}</p>
+                        </div>`;
+                });
+
+                // Projects
+                const projCont = document.getElementById('project-grid');
+                data.projects.forEach(p => {
+                    projCont.innerHTML += `
+                        <div class="project-card">
+                            <div class="tech-tag">${p.tech}</div>
+                            <h3>${p.title}</h3>
+                            <p>${p.desc}</p>
+                            <a href="${p.url}" class="accent-text" style="text-decoration:none; display:block; margin-top:15px; font-weight:bold;">View Repository →</a>
+                        </div>`;
+                });
+
+                // Files
+                document.getElementById('cv-view').href = data.files.cv;
+                document.getElementById('cv-dl').href = data.files.cv;
+                document.getElementById('res-view').href = data.files.resume;
+                document.getElementById('res-dl').href = data.files.resume;
+
+            } catch (e) { console.error("Error loading JSON:", e); }
+        }
+
+        // 2. SMOOTH EASING SCROLL
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.onclick = function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                window.scrollTo({ top: target.offsetTop - 80, behavior: 'smooth' });
+            };
+        });
+
+        // 3. DROPDOWN LOGIC
+        function toggleDrop(id) {
+            document.querySelectorAll('.dropdown-content').forEach(d => {
+                if(d.id !== id) {
+                    d.classList.remove('show');
+                    d.previousElementSibling.setAttribute('aria-expanded', 'false');
+                }
+            });
+            const drop = document.getElementById(id);
+            const isShowing = drop.classList.toggle('show');
+            drop.previousElementSibling.setAttribute('aria-expanded', isShowing);
+        }
+
+        // Close if click outside
+        window.onclick = function(e) {
+            if (!e.target.matches('.dropbtn')) {
+                document.querySelectorAll('.dropdown-content').forEach(d => {
+                    d.classList.remove('show');
+                    d.previousElementSibling.setAttribute('aria-expanded', 'false');
+                });
+            }
+        }
+
+        // 4. INTERSECTION OBSERVER (Active Links)
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    document.querySelectorAll('.nav-links a').forEach(link => {
+                        link.classList.toggle('active', link.getAttribute('href') === `#${entry.target.id}`);
+                    });
+                }
+            });
+        }, { threshold: 0.5 });
+
+        document.querySelectorAll('section, header').forEach(s => observer.observe(s));
+
+        window.onload = loadData;
+    </script>
 </body>
 </html>
